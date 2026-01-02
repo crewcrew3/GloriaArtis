@@ -30,7 +30,7 @@ loggingInterceptor = "5.3.2"
 
 #DI
 hilt = "2.57.2"
-#hiltNavComposeVersion = "1.3.0"
+hiltNavComposeVersion = "1.3.0"
 
 #навигация
 nav3Core = "1.0.0"
@@ -42,6 +42,11 @@ kotlinxSerializationCore = "1.8.0"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
+
+#прочее
+dataStoreVersion = "1.1.6"
+appcompat = "1.6.1"
+material = "1.10.0"
 
 [libraries]
 #androidx
@@ -86,7 +91,7 @@ logging-interceptor = {group = "com.squareup.okhttp3", name = "logging-intercept
 #DI
 hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
-#androidx-hilt-nav-compose = {group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavComposeVersion"}
+androidx-hilt-nav-compose = {group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavComposeVersion"}
 
 #навигация
 androidx-navigation3-runtime = { module = "androidx.navigation3:navigation3-runtime", version.ref = "nav3Core" }
@@ -94,11 +99,16 @@ androidx-navigation3-ui = { module = "androidx.navigation3:navigation3-ui", vers
 androidx-lifecycle-viewmodel-navigation3 = { module = "androidx.lifecycle:lifecycle-viewmodel-navigation3", version.ref = "lifecycleViewmodelNav3" }
 kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinxSerializationCore" }
 
+#прочее
+datastore-prefs = {group = "androidx.datastore", name = "datastore-preferences", version.ref = "dataStoreVersion"}
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
 [bundles]
 compose-deps = ["androidx-activity-compose", "androidx-compose-ui", "androidx-compose-ui-graphics", "androidx-compose-ui-tooling-preview", "androidx-compose-material3"]
 network-deps = ["retrofit", "converter-gson", "gson", "okhttp", "logging-interceptor"]
 coil-deps = ["coil-compose", "coil-network-okhttp"]
-nav-deps = ["androidx-navigation3-runtime", "androidx-navigation3-ui", "androidx-lifecycle-viewmodel-navigation3", "kotlinx-serialization-core"]
+nav-deps = ["androidx-navigation3-runtime", "androidx-navigation3-ui", "androidx-lifecycle-viewmodel-navigation3", "kotlinx-serialization-core", "androidx-hilt-nav-compose"]
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

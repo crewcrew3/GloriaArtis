@@ -1,0 +1,21 @@
+package ru.itis.gloriaartis.feature.artlist.impl.di
+
+import androidx.navigation3.runtime.EntryProviderScope
+import androidx.navigation3.runtime.NavKey
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ActivityRetainedComponent
+import dagger.multibindings.IntoSet
+import ru.itis.gloriaartis.feature.artlist.impl.navigation.artListEntryBuilder
+
+@Module
+@InstallIn(ActivityRetainedComponent::class)
+object ArtListNavModule {
+
+    @IntoSet
+    @Provides
+    fun provideArtListEntry(): EntryProviderScope<NavKey>.() -> Unit = {
+        artListEntryBuilder()
+    }
+}

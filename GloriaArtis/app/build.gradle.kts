@@ -45,6 +45,17 @@ android {
 }
 
 dependencies {
+    //modules
+    implementation(projects.core.ui)
+    implementation(projects.core.utils)
+    implementation(projects.core.domain)
+    implementation(projects.feature.artlist.api)
+//    implementation(projects.feature.signup.impl)
+//    implementation(projects.feature.login.impl)
+//    implementation(projects.feature.artlist.impl)
+//    implementation(projects.feature.artdetails.impl)
+//    implementation(projects.feature.profile.impl)
+
     //androidx
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
