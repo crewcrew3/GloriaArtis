@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GloriaArtis</string>
+
+    <string name="exception_msg_common">Unknown error</string>
+    <string name="exception_msg_bad_request">Incorrect data input</string>
+    <string name="exception_msg_not_found">No data found</string>
+    <string name="exception_msg_forbidden">Access is restricted</string>
+    <string name="exception_msg_unauthorized">Authorization is required</string>
+    <string name="exception_msg_auth_wrong_credentials">Incorrect username or password</string>
+    <string name="exception_msg_user_already_exists">User with this phone number already exists</string>
+    <string name="exception_msg_profile">Error receiving profile data</string>
+    <string name="exception_msg_art_response">Error receiving art data</string>
+    <string name="exception_msg_log_out">LogOut error</string>
+
+    <string name="placeholder_text_input">Enter</string>
+    <string name="label_nickname">Nickname</string>
+    <string name="label_pass">Password</string>
+    <string name="label_phone_number">Phone number</string>
+    <string name="label_repeat_pass">Repeat password</string>
+
+    <string name="auth_screen_phone_num_header">Enter\nphone number</string>
+    <string name="auth_screen_pass_header">Enter password</string>
+    <string name="profile_screen_unauth">To continue log in or sign up.</string>
+
+    <string name="btn_continue_text">Continue</string>
+    <string name="btn_save_text">Save</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <string name="title_art_list">Gallery</string>
+    <string name="title_profile">Profile</string>
+    <string name="top_bar_header_art_details">Art Details</string>
+    <string name="top_bar_header_sign_up">Sign Up</string>
+    <string name="top_bar_header_log_in">Log In</string>
+    <string name="registration_screen_header">Join our community of art lovers!</string>
+    <string name="login_screen_header">Log in to continue your journey into the world of art!</string>
+
+    <string name="profile_screen_tab_logout">Log out</string>
+    <string name="profile_screen_btn_text_login">Log In</string>
+    <string name="profile_screen_btn_text_signup">Sign Up</string>
+
+    <string name="art_details_highlight_label_text">A popular and important artwork in the collection</string>
+    <string name="art_details_accession_year_label">Accession Year</string>
+    <string name="art_details_department_label">Department</string>
+    <string name="art_details_object_name_label">Object Name</string>
+    <string name="art_details_culture_label">Culture</string>
+    <string name="art_details_period_label">Period</string>
+    <string name="art_details_dynasty_label">Dynasty</string>
+    <string name="art_details_portfolio_label">Portfolio</string>
+    <string name="art_details_artist_name_label">Artist Name</string>
+    <string name="art_details_artist_bio_label">Artist Bio</string>
+    <string name="art_details_medium_label">Medium</string>
+    <string name="art_details_artist_wikidata_label">Artist Wikidata URL</string>
+    <string name="art_details_art_wikidata_label">Art Wikidata URL</string>
+    <string name="art_details_additional_images_label">Art Additional Images</string>
+    <string name="art_details_no_additional_images">No additional images</string>
+    <string name="art_details_go_to_link">Go to</string>
+
+
+    <string name="phone_num_regex">Phone number must be in the format "7XXXXXXXXXX"</string>
+    <string name="nickname_regex">Nickname cannot be longer than 25 characters and cannot be empty</string>
+    <string name="password_name_regex">Password must be at least 8 and at most 100 characters</string>
+    <string name="repeat_password_error">Please repeat the password again</string>
+    <string name="not_empty_regex">This field cannot be empty</string>
+
+    <string name="toast_msg_login_successful">Log In is successful</string>
+    <string name="toast_msg_logout_successful">Log Out is successful</string>
+    <string name="toast_msg_signup_successful">Sign Up is successful</string>
+</resources>

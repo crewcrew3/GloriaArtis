@@ -1,0 +1,50 @@
+plugins {
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt.plugin)
+    alias(libs.plugins.detekt)
+}
+
+android {
+    namespace = "ru.itis.gloriaartis.utils"
+    compileSdk {
+        version = release(36)
+    }
+
+    defaultConfig {
+        minSdk = 26
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+}
+
+dependencies {
+    implementation(projects.core.ui)
+
+    //DI
+    implementation(libs.hilt)
+    ksp(libs.hilt.compiler)
+    //firebase
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.performance)
+    implementation(platform(libs.firebase.bom))
+}
